@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Well</title>
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+
+    <!-- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800 family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- external stylesheet  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <!-- =================== NAVBAR =================== -->
+        <nav>
+            <div class="container nav_container">
+                <a href="./index.html" class="nav-logo">
+                    <img src="./assets/logo.svg" alt="logo">
+                    <h1>LEARN WELL</h1>
+                </a>
+                <ul class="nav_menu">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./pages/courses.html">Courses</a>
+                    </li>
+                    <li>
+                        <a href="./pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+                <button id="close-menu-btn"><i class="fa-solid fa-x"></i></button>
+            </div>
+        </nav>
+        <!-- =================== END OF NAVBAR =================== -->
+
+        <!-- ================ HERO SECTION =============== -->
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list" id="gallery">
+                <!-- Gallery items will be dynamically added here -->
+            </div>
+
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="./assets/glry1.png">
+                    <div class="content">
+                        <div class="title">
+                            High Tech
+                        </div>
+                        <div class="description">
+                            LABS
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./assets/glry2.png">
+                    <div class="content">
+                        <div class="title">
+                            Elite Learning
+                        </div>
+                        <div class="description">
+                            FEEL
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./assets/glry3.png">
+                    <div class="content">
+                        <div class="title">
+                            Remote Study
+                        </div>
+                        <div class="description">
+                            OPTION
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./assets/glry4.png">
+                    <div class="content">
+                        <div class="title">
+                            High Quality
+                        </div>
+                        <div class="description">
+                            MENTOR
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- next prev -->
+
+            <div class="arrows">
+                <button id="prev"> < </button>
+                <button id="next"> > </button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div>
+        <!-- ================ END OF HERO SECTION =============== -->
+    </header>
+
+    <!-- ================== CATEGORY SECTION =========================== -->
+    <section class="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h2>Categories</h2>
+                <p>
+                    Learn Well: Elevating Education Through Personalized Coaching, Guiding Students Toward Academic
+                    Excellence and Lifelong Success. Empower Your Learning Journey Today!
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="categories_right">
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-globe"></i></span>
+                    <h5>Development</h5>
+                    <p>Master development skills essential for career growth and innovation.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-brands fa-bitcoin"></i></span>
+                    <h5>Blockchain</h5>
+                    <p>Unlock the potential of blockchain technology with expert-led courses.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-atom"></i></span>
+                    <h5>Data Science</h5>
+                    <p>Explore the depths of data science for cutting-edge insights.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-brands fa-python"></i></span>
+                    <h5>Python</h5>
+                    <p>Master Python for versatile application development.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-server"></i></span>
+                    <h5>DS & Algo</h5>
+                    <p>Gain mastery in DS & Algo for efficient problem solving.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-brands fa-node-js"></i></span>
+                    <h5>Node JS</h5>
+                    <p>Master Node for scalable and efficient server-side development.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ================== END OF CATEGORY SECTION =========================== -->
+
+    <!-- ====================== POPULAR COURSES ======================== -->
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <div class="container popular-courses-container">
+            <article class="course">
+                <div class="course-image">
+                    <img src="./assets/ct1.png" alt="">
+                </div>
+                <div class="course-info">
+                    <h4>Web Dev: Craft Your Digital Presence</h4>
+                    <p>
+                        Learn HTML, CSS, JavaScript, and frameworks. Build responsive, dynamic websites. Dive into
+                        backend with Node.js, databases, and APIs. Learn MERN STACT development with Edu Nest.
+                    </p>
+                    <h5>$ 76</h5>
+                    <div class="course-description">
+                        <div class="course-time">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>12 Weeks</span>
+                        </div>
+                        <div class="course-students">
+                            <i class="fa-solid fa-users"></i>
+                            <span>20K+ Students</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course-image">
+                    <img src="./assets/ct2.png" alt="">
+                </div>
+                <div class="course-info">
+                    <h4>DS Course: Unleash Data Analytics Skills</h4>
+                    <p>
+                        Master data analytics techniques, including data mining, visualization, and interpretation for
+                        informed decision-making in various industries. Learn full DSA with Java or C++.
+                    </p>
+                    <h5>$ 49</h5>
+                    <div class="course-description">
+                        <div class="course-time">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>10 Weeks</span>
+                        </div>
+                        <div class="course-students">
+                            <i class="fa-solid fa-users"></i>
+                            <span>10K+ Students</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course-image">
+                    <img src="./assets/ct3.png" alt="">
+                </div>
+                <div class="course-info">
+                    <h4>Python Mastery: Unlock Programming Potential</h4>
+                    <p>
+                        Comprehensive Python programming course covering fundamentals to advanced topics, equipping
+                        learners with versatile skills for software development and data analysis.
+                    </p>
+                    <h5>$ 59</h5>
+                    <div class="course-description">
+                        <div class="course-time">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>12 Weeks</span>
+                        </div>
+                        <div class="course-students">
+                            <i class="fa-solid fa-users"></i>
+                            <span>5K+ Students</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- ====================== END OF POPULAR COURSES ======================== -->
+
+    <!-- ================== FAQ =========================== -->
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faq-section">
+            <img src="./assets/faq.svg" alt="">
+            <div class="faqs-container">
+                <!-- creating faqs here dynamically -->
+            </div>
+        </div>
+    </section>
+    <!-- ================== END OF FAQ =========================== -->
+
+    <!-- ================== TESTIMONIALS =========================== -->
+    <section class="container testimonials-container swiper mySwiper">
+        <h2>What Our Students Say</h2>
+        <div class="swiper-wrapper">
+            <!-- generate testimonials here dynamically -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- ================== END OF TESTIMONIALS =========================== -->
+
+    <!-- ================== FOOTER =========================== -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer1">
+                <a href="./index.html" class="footer-logo">
+                    <img src="./assets/logo.svg" alt="">
+                    <h4>Learn Well</h4>
+                </a>
+                <P>
+                    Learn Well: Your Gateway to Knowledge and Academic Excellence Online
+                </P>
+            </div>
+
+            <div class="footer2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/courses.html">Courses</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="../../index.html">Website 1</a></li>
+                    <li><a href="./index.html">Website 2</a></li>
+                    <li><a href="../site 3/index.html">Website 3</a></li>
+                </ul>
+            </div>
+
+            <div class="footer3">
+                <h4>Privicy</h4>
+                <ul class="privicy">
+                    <li><a href="./pages/privacy.html">Privacy Policy</a></li>
+                    <li><a href="./pages/privacy.html#tnc">Terms & Conditions</a></li>
+                    <li><a href="./pages/privicy.html#refund">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>
+                        <a href="tel:6031112298">+91 60311 12298</a>
+                    </p>
+                    <p>
+                        <a href="mailto:hello@eduspot.com">hello@eduspot.com</a>
+                    </p>
+                </div>
+
+                <ul class="footer-social">
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <small>Copyright © 2024 Learn Well | All rights reserved.</small>
+        </div>
+    </foote>
+    <!-- ================== END OF FOOTER =========================== -->
+
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+
+    <!-- icon kit -->
+    <script src="https://kit.fontawesome.com/f90344f971.js" crossorigin="anonymous"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // slidesPerView: 1,
+            grabCurso: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            //when window width is  >= 767
+            breakpoints: {
+                767: {
+                    slidesPerView: 2
+                }
+            },
+        });  
+    </script>
+
+</body>
+
+</html>

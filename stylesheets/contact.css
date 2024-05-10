@@ -1,0 +1,172 @@
+.contact-container{
+    background: var(--color-bg1);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* aside  */
+.contact-aside{
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 3rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.aside-map{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.aside-map iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact-aside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.contact-details li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-socials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+
+.contact-socials a{
+    background: var(--color-bg2);
+    padding: 0.5rem;
+    border-radius: 25%;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.contact-socials a:hover{
+    background: var(--color-bg);
+}
+
+
+/* form  */
+.contact-form{
+    padding-top: 1rem;
+    position: relative;
+}
+
+.input-box{
+    height: 3rem;
+    width: 70%;
+    margin: 40px 0;
+    position: relative;
+}
+
+.input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 0.5rem;
+    outline: none;
+    padding-left: 0.5rem;
+    color: var(--color-white);
+    font-size: 1rem;
+    border: 1px solid var(--color-white);
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    padding-left: 10px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-gray);
+    transition: var(--transition);
+}
+
+.input-box .input:focus ~ label,
+.input-box .input:valid ~ label{
+    top: -1px;
+    left: 10px;
+    background: var(--color-bg1);
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+
+textarea.input{
+    resize: none;
+    min-height: 150px;
+    overflow: auto;
+    padding-top: 0.8rem;
+}
+
+.form-submit-btn{
+    position: relative;
+    top: 100px;
+}
+
+
+
+/* ======================= MEDIA QUERIES (TABLES) ================ */
+@media screen and (max-width: 1024px){
+    .contact-container{
+        gap: 1.5rem;
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    .contact-aside{
+        width: auto;
+        position: 1.5rem;
+        bottom: 0;
+    }
+}
+
+
+/* ================ MEDIA QUERIES (PHONES)================= */
+@media screen and (max-width: 600px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        margin-top: 0.5rem;
+    }
+
+    .contact-socials{
+        margin-bottom: 0;
+    }
+
+    .contact-aside{
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    /* form  */
+    .contact-form{
+        padding-top: 0;
+        padding-left: 3rem;
+        padding-bottom: 10rem;
+    }
+
+    .input-box{
+        width: 80%;
+    }
+}
